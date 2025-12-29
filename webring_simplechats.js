@@ -45,6 +45,7 @@ template.innerHTML = `
 
 class WebRing extends HTMLElement {
   connectedCallback() {
+    const sites = DATA_FOR_WEBRING;
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
