@@ -1,6 +1,6 @@
 ﻿const DATA_FOR_WEBRING = [
   {
-    "name": "Kami",
+    "name": "Kami's Corner",
     "url": "https://kami.bearblog.dev",
     "owner": "Kami"
   },
