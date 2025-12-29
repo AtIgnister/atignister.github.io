@@ -1,15 +1,15 @@
 ﻿const DATA_FOR_WEBRING = [
-    {
-      "name": "Kami",
-      "url": "https://kami.bearblog.dev",
-      "owner": "Kami"
-    },
-    {
-      "name": "monocyte’s blog ",
-      "url": "https://monocyte.bearblog.dev",
-      "owner": "Mono"
-    }
-]
+  {
+    "name": "Kami",
+    "url": "https://kami.bearblog.dev",
+    "owner": "Kami"
+  },
+  {
+    "name": "monocyte’s blog ",
+    "url": "https://monocyte.bearblog.dev",
+    "owner": "Mono"
+  }
+];
 
 // I have shamelessly stolen this script from https://css-tricks.com/how-you-might-build-a-modern-day-webring/
 // credit goes to them
@@ -78,10 +78,9 @@ class WebRing extends HTMLElement {
       </p>
         `;
 
-      this.shadowRoot
-        .querySelector("#copy")
-        .insertAdjacentHTML("afterbegin", cp);
-      };
+    this.shadowRoot
+      .querySelector("#copy")
+      .insertAdjacentHTML("afterbegin", cp);
   }
 
   getRandomInt(min, max) {
@@ -89,5 +88,5 @@ class WebRing extends HTMLElement {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-
+}
 window.customElements.define("webring-css", WebRing);
