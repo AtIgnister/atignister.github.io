@@ -64,7 +64,7 @@ class WebRing extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     // Always append template first (so #copy exists)
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot.appendChild(default_styles.content.cloneNode(true));
 
     // Apply custom styles from attribute if provided
     const customStyleAttr = this.getAttribute("custom-style");
