@@ -23,7 +23,7 @@
 
 // I have shamelessly stolen this script from https://css-tricks.com/how-you-might-build-a-modern-day-webring/
 // credit goes to them
-const template = document.createElement("template");
+const default_styles = document.createElement("template");
 template.innerHTML = `
 <style>
 .webring {
@@ -62,7 +62,16 @@ class WebRing extends HTMLElement {
   connectedCallback() {
     const sites = DATA_FOR_WEBRING;
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    // Apply custom styles from attribute if provided
+    const customStyleAttr = this.getAttribute("custom-style");
+    if (customStyleAttr) {
+      const customStyle = document.createElement("style");
+      customStyle.textContent = customStyleAttr;
+      this.shadowRoot.appendChild(customStyle);
+    } else {
+      this.shadowRoot.appendChild(default_styles.content.cloneNode(true));
+    }
 
     // e.g. https://css-tricks.com
     const thisSite = this.getAttribute("site");
