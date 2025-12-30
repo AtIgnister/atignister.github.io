@@ -13,6 +13,11 @@
     "name": "Mooses's Blog",
     "url": "https://tanzi-media.com/",
     "owner": "Moose"
+  },
+  {
+    "name": "Absurd Pirate's Internet Lounge",
+    "url": "https://absurdpirate.com/",
+    "owner": "Absurd Pirate"
   }
 ];
 
