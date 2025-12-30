@@ -63,6 +63,9 @@ class WebRing extends HTMLElement {
     const sites = DATA_FOR_WEBRING;
     this.attachShadow({ mode: "open" });
 
+    // Always append template first (so #copy exists)
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+
     // Apply custom styles from attribute if provided
     const customStyleAttr = this.getAttribute("custom-style");
     if (customStyleAttr) {
@@ -80,6 +83,12 @@ class WebRing extends HTMLElement {
     const matchedSiteIndex = sites.findIndex(
       (site) => site.url === thisSite
     );
+
+    if (matchedSiteIndex === -1) {
+      this.shadowRoot.querySelector("#copy").innerHTML = `<p>Site not found in webring</p>`;
+      return;
+    }
+
     const matchedSite = sites[matchedSiteIndex];
 
     let prevSiteIndex = matchedSiteIndex - 1;
