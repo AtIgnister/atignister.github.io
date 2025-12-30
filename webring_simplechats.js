@@ -93,7 +93,8 @@ class WebRing extends HTMLElement {
     const cp = `
       <h1>SimpleChats Webring</h1>
       <p>
-        This <a href="${matchedSite.url}">${matchedSite.name}</a> site is owned by ${matchedSite.owner}
+        You are on ${matchedSite.url}, owned by ${matchedSite.owner}!<br>
+        This site is part of the SimpleChats webring! Use the controls below to discover other sites!
       </p>
           
       <p>
