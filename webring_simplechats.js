@@ -26,7 +26,6 @@ template.innerHTML = `
   border-top-color: #666;
   border-left-color: #666;
   padding: 1rem;
-  color: lightblue;
 
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -36,6 +35,11 @@ template.innerHTML = `
 
   font: 100% system-ui, sans-serif;
 }
+
+.webring a {
+  color: lightblue;
+}
+
 .icon {
   font-size: 100px;
 }
