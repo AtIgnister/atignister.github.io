@@ -25,7 +25,8 @@ template.innerHTML = `
   border: 15px solid #222;
   border-top-color: #666;
   border-left-color: #666;
-  padding: 1rem; 
+  padding: 1rem;
+  color: lightblue;
 
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
