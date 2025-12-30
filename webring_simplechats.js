@@ -8,6 +8,11 @@
     "name": "monocyte’s blog ",
     "url": "https://monocyte.bearblog.dev",
     "owner": "Mono"
+  },
+  {
+    "name": "Mooses's Blog",
+    "url": "https://tanzi-media.com/",
+    "owner": "Moose"
   }
 ];
 
