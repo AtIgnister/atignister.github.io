@@ -24,7 +24,7 @@
 // I have shamelessly stolen this script from https://css-tricks.com/how-you-might-build-a-modern-day-webring/
 // credit goes to them
 const default_styles = document.createElement("template");
-template.innerHTML = `
+default_styles.innerHTML = `
 <style>
 .webring {
   border: 15px solid #222;
