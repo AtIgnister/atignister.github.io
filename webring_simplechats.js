@@ -72,8 +72,6 @@ class WebRing extends HTMLElement {
       const customStyle = document.createElement("style");
       customStyle.textContent = customStyleAttr;
       this.shadowRoot.appendChild(customStyle);
-    } else {
-      this.shadowRoot.appendChild(default_styles.content.cloneNode(true));
     }
 
     // e.g. https://css-tricks.com
