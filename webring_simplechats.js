@@ -18,6 +18,11 @@
     "name": "Absurd Pirate's Internet Lounge",
     "url": "https://absurdpirate.com/",
     "owner": "Absurd Pirate"
+  },
+  {
+    "name": "mx husband",
+    "url": "https://mxhusband.bearblog.dev/",
+    "owner": "Ivana"
   }
 ];
 
