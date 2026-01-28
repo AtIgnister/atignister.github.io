@@ -23,6 +23,11 @@
     "name": "mx husband",
     "url": "https://mxhusband.bearblog.dev/",
     "owner": "Ivana"
+  },
+  {
+    "name": "suliman",
+    "url": "https://blog.sulimans.space",
+    "owner": "suliman"
   }
 ];
 
