@@ -28,8 +28,24 @@
     "name": "suliman",
     "url": "https://blog.sulimans.space",
     "owner": "suliman"
+  },
+  {
+    "name": "Raccoon's Trash Can",
+    "url": "https://racc.blog",
+    "owner": "ash"
+  },
+  {
+   "name": "james' coffee blog",
+   "url": "https://jamesg.blog",
+   "owner": "james"
+  },
+  {
+   "name": "juni-personal",
+   "url": "https://juni-mp4.bearblog.dev",
+   "owner": "juni"
   }
-];
+]
+
 
 // I have shamelessly stolen this script from https://css-tricks.com/how-you-might-build-a-modern-day-webring/
 // credit goes to them
