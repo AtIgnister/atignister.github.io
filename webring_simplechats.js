@@ -43,6 +43,11 @@
    "name": "juni-personal",
    "url": "https://juni-mp4.bearblog.dev",
    "owner": "juni"
+  },
+  {
+    "name": "Zachary Kai",
+    "url": "https://zacharykai.net/",
+    "owner": "Zachary Kai"
   }
 ]
 
