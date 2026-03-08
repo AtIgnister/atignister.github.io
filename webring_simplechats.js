@@ -46,7 +46,7 @@
   },
   {
     "name": "Zachary Kai",
-    "url": "https://zacharykai.net/",
+    "url": "https://zacharykai.net",
     "owner": "Zachary Kai"
   }
 ]
